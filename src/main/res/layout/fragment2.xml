@@ -53,6 +53,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:text="10"
                 app:layout_constraintEnd_toStartOf="@+id/textview23"
                 app:layout_constraintStart_toEndOf="@+id/textview2"
                 app:layout_constraintTop_toBottomOf="@+id/textview1" />
@@ -93,6 +94,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textview22"
                 app:layout_constraintTop_toBottomOf="@+id/textview1" />
@@ -134,6 +136,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:text=""
                 app:layout_constraintEnd_toStartOf="@+id/textview34"
                 app:layout_constraintStart_toEndOf="@+id/textview4"
                 app:layout_constraintTop_toBottomOf="@+id/textview32" />
@@ -183,7 +186,7 @@
                 android:layout_below="@+id/textview4"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Кальция глюконат, % - мл"
+                android:text="@string/textcalcium"
                 android:textAlignment="textStart"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -211,6 +214,7 @@
                 android:layout_alignStart="@+id/textview22"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:text=""
                 app:layout_constraintStart_toEndOf="@+id/textview6"
                 app:layout_constraintTop_toBottomOf="@+id/textview25" />
 

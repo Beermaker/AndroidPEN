@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
@@ -19,13 +20,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Settings_Activity"
+            android:name=".SettingsActivity"
             android:label="@string/app_name2" />
         <activity
             android:name=".Nutritions_Activity"
             android:label="@string/app_name1" />
-        <activity android:name=".Info_Activity" android:label="@string/app_name3"></activity>
-
+        <activity
+            android:name=".Info_Activity"
+            android:label="@string/app_name3" />
     </application>
 
 </manifest>
