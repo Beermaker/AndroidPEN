@@ -3,7 +3,7 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="1"
-        android:title="Настройки" />
+        android:title="@string/title_activity_settings" />
     <item
         android:id="@+id/action_nutritions"
         android:orderInCategory="2"

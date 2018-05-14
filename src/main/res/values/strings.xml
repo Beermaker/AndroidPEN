@@ -3,6 +3,80 @@
     <string name="app_name2">Настройки калькулятора</string>
     <string name="app_name1">Смеси</string>
     <string name="app_name3">О приложении</string>
+    <string name="textcalcium">Кальция глюконат</string>
+    <string name="textnaclorpersent">5,85</string>
+    <string name="textkaclorpersent">4</string>
+    <string name="textmagnesiumpersent">25</string>
+    <string name="settings001"> Не учитывать ЭП менее 25 мл/кг</string>
+    <string name="title_activity_pref">Настройки</string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Базовые растворы</string>
+
+    <string name="pref_title_5percglucose">5% раствор глюкозы</string>
+    <string name="pref_title_10percglucose">10% раствор глюкозы</string>
+    <string name="pref_title_20percglucose">20% раствор глюкозы</string>
+    <string name="pref_title_40percglucose">40% раствор глюкозы</string>
+
+    <string name="pref_title_calcium">10% раствор кальция</string>
+    <string-array name="pref_sync_calcium_titles">
+        <item>хлорид</item>
+        <item>глюконат</item>
+        <item>Не использовать в расчетах</item>
+    </string-array>
+    <string-array name="pref_sync_calcium_values">
+        <item>1</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">О приложении</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">База данных смесей</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

@@ -1,4 +1,6 @@
 package com.example.myapplication
+
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.ViewPager
@@ -7,6 +9,7 @@ import android.widget.AdapterView
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.*
 import android.app.Activity;
+import android.app.Fragment
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -20,13 +23,24 @@ import android.view.Menu;
 import android.view.MenuItem
 import android.widget.TextView
 import android.content.Intent
+import android.preference.PreferenceManager;
+import android.preference.SwitchPreference
 
 
-
-
-
-class MainActivity :  AppCompatActivity() {
+abstract class MainActivity :  AppCompatActivity() {
 //    var btnAdd: Button? = null
+
+    var SwPr5: Boolean = false
+
+
+    override fun onStart() {
+        super.onStart()
+
+        fun getPreferences() {
+            val prefs = PreferenceManager
+                    .getDefaultSharedPreferences(baseContext)
+            SwPr5 = prefs.getBoolean("switch_5percglucose", false)
+                  }}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,9 +48,12 @@ class MainActivity :  AppCompatActivity() {
 
         val adapter = pageradapter(supportFragmentManager)
         val pager = findViewById<View>(R.id.pager) as ViewPager
-
         pager.adapter = adapter
-    }
+
+
+       }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
@@ -49,7 +66,7 @@ class MainActivity :  AppCompatActivity() {
         when (id) {
             R.id.action_settings -> {
                 // Создаем объект Intent для вызова новой Activity
-                val intent = Intent(this, Settings_Activity::class.java)
+                val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent);
                 return true
             }

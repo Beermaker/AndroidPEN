@@ -9,13 +9,13 @@ class pageradapter (fm: FragmentManager) : FragmentStatePagerAdapter(fm){
          when (position) {
                 0 -> return Fragment1()
                 1 -> return Fragment2()
-                else -> return Fragment3()
-            //else -> return Fragment4()
+                2 -> return Fragment3()
+               else -> return Fragment4()
         }
     }
 
     override fun getCount(): Int {
-       return 3
+       return 4
     }
 
 }
